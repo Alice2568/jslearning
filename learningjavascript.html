@@ -13,12 +13,12 @@
 </head>
 <body>
     <script>
-        let prenom = prompt("Veuillez saisir votre prénom");
+        /*let prenom = prompt("Veuillez saisir votre prénom");
         let nom = prompt("Veuillez saisir votre nom");
         if(prenom== "Alice")
     {
         alert("Bonjour chef")}
-        else {alert("Bonjour "+nom+" "+prenom)};
+        else {alert("Bonjour "+nom+" "+prenom)};*/
         
         /*let nb1 = parseInt(prompt("Veuillez saisir un nombre"));
         let nb2 = prompt("un deuxième svp?");
@@ -27,8 +27,63 @@
         let F = (c*9/5) + 32;
         alert(F)*/
 
+        /*let nb = parseInt(prompt("Veuillez entrez un nombre"))
+        let p =nb%2
+        if (p==0)
+        {
+            alert("nombre pair")
+        } 
+        else {
+            alert("nombre impair")
+        }*/
         
+        /*const n0=2024
+        let n = parseInt(prompt("Veuillez saisir votre date de naissance"))
+        let age=n0-n
+        if (age>=18 )
+    {
+        alert("vous êtes majeur, vous avez "+age+" ans")
+    }
+    else {
+        alert("vous êtes mineur,vous avez "+age+" ans")
+    }*/
+
+        let n1 = parseInt(prompt("Veuillez saisir un nombre"));
+        let n2 = parseInt(prompt("un deuxième svp?"));
+        let op = prompt("veuillez entrer un opérateur");
+
+        switch (op) 
+    {
+        case "+" :
+            alert(n1+n2);
+            break;
+            
+        case "-" :
+            alert(n1-n2);
+            break;
         
+        case "/":
+            if ((n1==0) || (n2==0))
+    {
+        alert("La division par 0 n'est pas possible! Veuillez rentrer une opération valide");
+    }
+            else {
+                alert(n1/n2)}
+            break;
+        
+        case "*":
+            alert(n1*n2);
+            break;
+        
+        default:
+            alert("opérateur invalide");
+            let op2 = prompt("Veuillez entrer un opérateur valide!");
+    }
+          
+    
+
+ 
+
 
 
     </script>
