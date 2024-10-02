@@ -29,18 +29,32 @@
         }
 
     document.getElementById("demo").innerHTML = text;*/
-    const nombres = parseInt[]
-    let nombre
-    let text = ""    
-    do {
-        nombre = prompt ("Saisissez un nombre");
-        if (nombre) {
-            nombres.push(nombre);
-        }
-    }while (nombre)
-     
 
-    document.getElementById("demo").innerHTML = "la somme des nombres saisis est :"+nombres+"et la moyenne est:"+;
+    /*let somme = 0
+    let compteur = -1
+     
+    do 
+        {
+            nombre = parseInt(prompt("saisissez nombre"));
+            somme +=nombre;
+        compteur++}
+    
+    while (nombre/=0);
+        
+
+    let moyenne = somme/compteur   
+    document.getElementById("demo").innerHTML = "la somme des nombres saisis est : "+somme+" et la moyenne est: "+moyenne;*/
+    let X = parseInt(prompt("Saisissez la valeur de X: "))
+    let N = parseInt(prompt("Saisissez la valeur de N: "))
+    let result =""
+    let i = 1
+    do 
+    {
+         result += i+" x "+X+" = "+i*X+"<br>";
+        i ++;
+    }while ( i<=N);
+    document.getElementById("demo").innerHTML = result
+
     </script>
 </body>
 </html>
