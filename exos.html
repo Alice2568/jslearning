@@ -106,7 +106,7 @@ document.getElementById("image").appendChild(img);
         document.getElementById("fonction").innerHTML = 
             "Le cube de " + x + " est égal à " + c + 
             "<br>Le produit de " + x + " x " + y + " est égal à " + produit;*/
-let str1 =prompt("saississez une chaine de mots séparés par ';' :");
+/*let str1 =prompt("saississez une chaine de mots séparés par ';' :");
 let n =parseInt(prompt("saisissez un nombre: "));
 const str2=";"
 
@@ -114,19 +114,30 @@ const str2=";"
     // Diviser la chaîne str1 en utilisant le séparateur str2
     const mots = str1.split(str2);
 
-    // Vérifier si n est dans les limites du tableau
+    // Vérifier si n est dans les limites du tableau car chaines en js commence par 0
     if (n < 1 || n > mots.length) {
-        return null; // ou une chaîne vide, selon ce que vous préférez
+        return null; // ou une chaîne vide,erreur
     }
 
-    // Retourner le nième mot (n-1 pour ajuster l'index)
+    // Retourner le nième mot (n-1 pour ajuster l'index) 
     return mots[n - 1];
     
 
 }
 const result=strtok(str1, str2, n);
-console.log(result);
+console.log(result);*/
 
+    let n =parseInt(prompt("saisissez le nombre de valeur à ajouter à votre tableau: "));
+
+
+const mytableau=[]
+let i=0
+while (i!=n){
+    let val =prompt("saisissez la valeur :");
+    mytableau.push(val);
+    i++;
+}
+document.getElementById("demo").innerHTML = mytableau.toString();
 </script>
 
 
