@@ -83,8 +83,54 @@ const nombreVoyelles = compterVoyelles(motSaisi);
 
 // Afficher le résultat
 alert(`Le nombre de voyelles dans "${motSaisi}" est : ${nombreVoyelles}`);*/
-<h2>exercices :fonctions</h2>
+</script>
+<h2 >exercices :fonctions</h2>
+<p id="image"></p>
+<p id="fonction"></p>
+<script>
+/*let x =parseInt(prompt("Veuillez saisir un nombre:"))
+let y =parseInt(prompt("Vueillez entrer un multiplicateur: "))
+let c = x*x
+let produit= x*y
 
-    </script>
+//creation de l'element image
+const img = document.createElement('img');
+
+
+img.src = "papillon.jpg"
+img.alt = "image papillon"
+//assignation de l'image a l'id image html
+document.getElementById("image").appendChild(img);
+
+        // Afficher les résultats
+        document.getElementById("fonction").innerHTML = 
+            "Le cube de " + x + " est égal à " + c + 
+            "<br>Le produit de " + x + " x " + y + " est égal à " + produit;*/
+let str1 =prompt("saississez une chaine de mots séparés par ';' :");
+let n =parseInt(prompt("saisissez un nombre: "));
+const str2=";"
+
+            function strtok(str1, str2, n) {
+    // Diviser la chaîne str1 en utilisant le séparateur str2
+    const mots = str1.split(str2);
+
+    // Vérifier si n est dans les limites du tableau
+    if (n < 1 || n > mots.length) {
+        return null; // ou une chaîne vide, selon ce que vous préférez
+    }
+
+    // Retourner le nième mot (n-1 pour ajuster l'index)
+    return mots[n - 1];
+    
+
+}
+const result=strtok(str1, str2, n);
+console.log(result);
+
+</script>
+
+
+
+    
 </body>
 </html>
