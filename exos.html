@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="exercie javascript">
-    <title>Collecte de prénoms</title>
+    <title>exercices javascript</title>
 </head>
 <body>
-    <h1>exercices JS: Fonctions</h1>
+    <h1>exercices JS: Boucles</h1>
     <p id="demo"></p>
     <script>
         /*const prenoms = [];
@@ -44,7 +44,7 @@
 
     let moyenne = somme/compteur   
     document.getElementById("demo").innerHTML = "la somme des nombres saisis est : "+somme+" et la moyenne est: "+moyenne;*/
-    let X = parseInt(prompt("Saisissez la valeur de X: "))
+    /*let X = parseInt(prompt("Saisissez la valeur de X: "))
     let N = parseInt(prompt("Saisissez la valeur de N: "))
     let result =""
     let i = 1
@@ -53,7 +53,37 @@
          result += i+" x "+X+" = "+i*X+"<br>";
         i ++;
     }while ( i<=N);
-    document.getElementById("demo").innerHTML = result
+    document.getElementById("demo").innerHTML = result*/
+    // Fonction pour compter le nombre de voyelles
+
+/*function compterVoyelles(mot) {
+    // Définir les voyelles
+    const voyelles = "aeiouyAEIOUY";
+    let compteur = 0;
+
+    // Parcourir chaque caractère du mot
+    for (let i = 0; i < mot.length; i++) {
+        // Extraire le caractère à la position i
+        const caractere = mot.substring(i, i + 1);
+        
+        // Vérifier si le caractère est une voyelle
+        if (voyelles.indexOf(caractere) !== -1) {
+            compteur++;
+        }
+    }
+
+    return compteur;
+}
+
+// Demander un mot à l'utilisateur
+const motSaisi = prompt("Veuillez saisir un mot :");
+
+// Compter les voyelles dans le mot saisi
+const nombreVoyelles = compterVoyelles(motSaisi);
+
+// Afficher le résultat
+alert(`Le nombre de voyelles dans "${motSaisi}" est : ${nombreVoyelles}`);*/
+<h2>exercices :fonctions</h2>
 
     </script>
 </body>
