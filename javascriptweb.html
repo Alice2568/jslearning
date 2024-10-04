@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="exercie javascript">
+        <title>exercices javascript</title>
+    <body>
+        <p id="exo"></p>
+        
+
+        <script>
+        let somme = 0
+        let compteur = -1
+         
+        do 
+            {
+                nombre = parseInt(prompt("saisissez nombre"));
+                somme +=nombre;
+            compteur++}
+        
+        while (nombre/=0);
+            
+    
+        let moyenne = somme/compteur   
+        document.getElementById("exo").innerHTML = "Vous avez saisis : "+compteur+" nombres .<br>La somme des nombres saisis est : "+somme+" et la moyenne est: "+moyenne;
+       
+        </script>
+    </body>
+    </html>
