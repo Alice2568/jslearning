@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>Mon 1er script</title>
-   
+   <meta charset="UTF-8">
+        <meta name="description" content="exercie javascript">
+        <title>exercices javascript</title>
 </head>
 <body>
     <script src="exercice1.js"></script>
-   <!-- Ajouter le code Javascript ici pour le titre -->   
-   <p>Rien à ajouter</p>  
+   
+    <form action="/action_page.php">
+      <p>Saisissez un texte puis pressez le bouton "controler".</p>
+      <input type="text" id="fname" name="fname" ><br>
+   
+      <input type="button" onclick="controle()" value="Controler">
+      <script> 
+         /*function controle()
+         {let fname = document.getElementById("fname").value;
+         alert("Vous avez saisi: "+fname)}*/
+         </script>
+         <input type="number" id="textBox1" min="1" max="100">
+    <input type="button" onclick="verif()" value="Vérifier">
+    <div id="label1"></div>
+
+    <script>
+        //Générer un nombre aléatoire entre 1 et 100
+        const nombreMagique = Math.floor(Math.random() * 100) + 1;
+
+        function verif() {
+            const userInput = document.getElementById("textBox1").value;
+            const label = document.getElementById("label1");
+        }
+
+            // Vérifier si la saisie est un nombre valide
+            if (userInput === "") {
+                label.textContent = "Veuillez entrer un nombre.";
+                return;
+            }
+
+            const userNumber = parseInt(userInput, 10);
+
+            if (userNumber > nombreMagique) {
+                label.textContent = "Trop grand !";
+            } else if (userNumber < nombreMagique) {
+                label.textContent = "Trop petit !";
+            } else {
+                label.textContent = "Félicitations ! Vous avez trouvé le nombre magique !";
+
+            }
+   </script>
+      
 </body>
 </html>
