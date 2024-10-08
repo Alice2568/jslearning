@@ -1,5 +1,26 @@
-<script>
-   alert("<h1><strong>Bouhhh!!</strong></h1>");
-   console.log("Ah que Coucou !");
-   document.write("Coucou beuh !");
-   </script>
+
+        
+        
+        document.getElementById("button1").addEventListener("click", verif())
+        function verif(){
+         
+         const nombreMagique = Math.floor(Math.random() * 100) + 1;
+        console.log(nombreMagique);
+        const userInput = document.getElementById("textBox1").value;
+        
+            // Vérifier si la saisie est un nombre valide
+            
+                
+                if (userInput > nombreMagique){
+                    alert("Trop grand! ");
+                }
+
+                else if( userInput <nombreMagique){
+                    alert("Trop petit! ");
+            }
+
+                else {
+                    alert("Félicitations ! Vous avez trouvé le nombre magique !")
+                
+            }}
+   
