@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="formulaire" content="formulairedecontactexercicejavascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Contact</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h3>Vos coordonnées : </h3>
+        <form id="formulaire">
+            <p id="red">*Ces zones sont obligatoires pour envoyer le formulaire</p>
+            <label for="société" class="col-4">Société</label> <input type="text" name="Société" id="société"><div id="red">*</div><br>
+            <label for="contact" class="col-4">Personne à contacter : </label><input type="text" name="Personne à contacter : " id="contact"><div id="red">*</div><br>
+            <label for="entreprise" class="col-4">Adresse de l'entreprise : </label><textarea name="Adresse de l'entreprise : " rows="5" cols="20" id="entreprise"></textarea><div id="red">*</div><br>
+            <label for="postal" class="col-4">Code Postal</label><input type="text" name="Code Postal" id="postal"><div id="red">*</div><br>
+            <label for="ville" class="col-4">Ville</label><input type="text" name="Ville" id="ville"><div id="red">*</div><br>
+            <lable for="mail" class="col-4">E-mail</lable><input type="text" name="E-mai" id="mail"><div id="red">*</div><br>
+            <label for="telephone" class="col-4">Téléphone</label><input type="text" name="Téléphone" id="telephone"><br>
+            <label for="projet" class="col-4">Sélectionnez l'environnement technique du projet :</label>
+            <select id="projet" class="col-4">
+                <option value="" selected>Choisissez</option>
+                <option value="Access">Access</option>
+                <option value="Java">Java</option>
+                <option value="Delphi">Delphi</option>
+                <option value="Windev">Windev</option>
+                <option value="Visual Basic">Visual Basic</option>
+                <option value="Power Builder">Power Builder</option>
+                <option value="Internet">Internet</option>
+                <option value="Intranet">Intranet</option>
+                <option value="Windows NT">Windows NT</option>
+                <option value="Unix">Unix</option>
+                <option value="SQL Server">SQL Server</option>
+                <option value="Oracle">Oracle</option>
+                <option value="Autres">Autres...</option>
+            </select>
+            <textarea name="projet" id="projet" rows="10" cols="15"></textarea>
+        </form>
+    </body>
+
+</html>
